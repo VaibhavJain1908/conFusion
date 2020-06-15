@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
         <link rel="stylesheet" href="css/style.css">
     <title>Ristorante Con Fusion</title>
+
 </head>
 
 <body>
@@ -40,8 +41,15 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#card">
+                    <button id="button" type="button" class="btn btn-sm btn-block btn-warning">
+                        Reserve Table
+                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -70,8 +78,14 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/buffet.png" alt="buffet">
+                    <div class="media-body order-first">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW </span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -87,6 +101,36 @@
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center ">
+            <div class="offset-sm-2 col-sm-8 offset-sm-2">
+                <div id="card" class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <div class="row col-12">
+                        <p class="col-sm-2">Number of Guests</p>
+                            <div class="offset-sm-2 col-sm-6">
+                                <input type="radio"> 1
+                                <input type="radio"> 2
+                                <input type="radio"> 3
+                                <input type="radio"> 4
+                                <input type="radio"> 5
+                                <input type="radio"> 6<br><br>
+                            </div>
+                        </div>
+                        <div class="row col-12">
+                            <p class="col-sm-2">Date and Time</p>
+                            <input style="height: 20%" class="offset-sm-1" type="text" name="date" id="date" placeholder="Date">
+                            <input style="height: 20%" class="offset-sm-1" type="text" name="time" id="time" placeholder="Time">
+                        </div>
+                        <div class="row col-12">
+                            <br><br><br>
+                            <button type="submit" class="offset-sm-3 align-self-center btn btn-primary">Reserve</button>
+                        </div>
                     </div>
                 </div>
             </div>

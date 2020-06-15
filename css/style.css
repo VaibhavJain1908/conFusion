@@ -37,3 +37,16 @@ body {
 .navbar-dark {
     background-color: #512DA8;
 }
+
+#button {
+    height: 120%;
+    width: 90%;
+    font-size: 120%;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
